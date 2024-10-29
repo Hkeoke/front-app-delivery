@@ -1,0 +1,276 @@
+:root {
+  --primary-color: #f54749;
+  --dark-color: #121212;
+  --main-padding: 5rem 0;
+  --mid-padding: 4rem 0;
+  --padding: 3rem 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin-bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f6f4;
+}
+
+/******************************************/
+.Nav_main {
+  background: var(--dark-color);
+  color: #fff !important;
+}
+.nav-link {
+  color: #fff !important;
+}
+.icons i {
+  color: #fff !important;
+  font-size: 1.7rem;
+}
+.btn1 {
+  border: 0;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.btn1 span {
+  color: #121212;
+}
+.btn1:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+}
+.navbar-brand img {
+  transition: opacity 0.5s ease-in-out;
+}
+.logo-small {
+  width: 50px;
+  height: auto;
+  /* o si prefieres un tamaño específico para alto y ancho */
+  /* width: 50px; */
+  /* height: 50px; */
+  object-fit: contain;
+}
+.foto_Home {
+  background: var(--dark-color);
+  color: #fff;
+  padding: var(--mid-padding);
+}
+.foto_Home img:hover {
+  animation: mover infinite 3s ease-in-out;
+  cursor: pointer;
+}
+.logo-small-Home {
+  width: 450px;
+  height: auto;
+  right: -100px;
+  /* o si prefieres un tamaño específico para alto y ancho */
+  /* width: 50px; */
+  /* height: 50px; */
+  object-fit: contain;
+}
+.col2_home {
+  margin-left: 80px; /* Valor positivo para mover a la derecha */
+}
+
+/* Para mantener la imagen centrada en pantallas pequeñas */
+@media (max-width: 992px) {
+  .col2_home {
+    margin-left: 0;
+  }
+}
+.nav-item {
+  margin-right: 20px;
+  font-weight: 600;
+  /* Agrega espacio a la derecha de cada elemento */
+}
+.btn0 {
+  background: #fff !important;
+  color: #121212;
+  font-weight: 500;
+}
+.col1_home h1 {
+  font-size: 3.4rem;
+  font-weight: 600;
+}
+.delivery-img {
+  width: 120px;
+  height: auto;
+}
+.delivery_col1 {
+  margin: 0 3rem;
+  padding: 2rem;
+  /*border: 2px solid var(--primary-color);*/
+  border-radius: 20px;
+  box-shadow: 0 0 40px 3px #dfdfdf;
+}
+.delivery_col1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 10px 1px var(--primary-color);
+}
+.delivery_col1 h3 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+.h1_delivery {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.h1_delivery span {
+  color: var(--primary-color);
+}
+.ofertas-img {
+  width: 200px;
+  height: auto;
+}
+.ofertas-img:hover {
+  animation: mover infinite 3s ease-in-out;
+  cursor: pointer;
+}
+@keyframes mover {
+  0% {
+    transform: rotate(30deg) scale(1.05);
+  }
+  25% {
+    transform: rotate(60deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(-30deg) scale(1);
+  }
+  100% {
+    transform: rotate(-60deg) scale(1.15);
+  }
+}
+
+.Ofertas_col1 {
+  margin: 1rem;
+
+  box-shadow: 0 0 40px 3px #dfdfdf;
+  border-radius: 20px;
+}
+
+.Ofertas_col1 h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.stars i {
+  color: #f5c60d;
+  font-size: 1.1rem;
+  padding-right: 0.2rem;
+}
+.stars i:hover {
+  transform: scale(1.3);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.Ofertas_col1 button {
+  font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  color: #fff;
+  background: var(--primary-color);
+}
+.Ofertas_col1 button:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.Ofertas {
+  position: relative;
+}
+.Footer {
+  background: var(--dark-color);
+  padding: 20px 0;
+  color: white;
+}
+.Footer h4 {
+  margin-bottom: 10px;
+}
+.Footer ul {
+  list-style: none;
+  padding: 0;
+}
+.Footer .social-icons i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+/*****************************************/
+/*****************************************/
+@media only screen and (min-width: 320px) and(max-width:476px) {
+  .navbar-toggler-icon {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  .navbar-toggler {
+    padding: 0.5rem !important;
+  }
+  .navbar-brand img {
+    width: 150px;
+  }
+}
+/**********************css de home page para controlar side menu *******************/
+.app-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.app-container.with-sidebar {
+  padding-left: 280px; /* Ancho del MenuSide */
+}
+
+.main-content {
+  transition: padding-left 0.3s ease;
+}
+
+.main-content.with-sidebar {
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .app-container.with-sidebar {
+    padding-left: 0;
+  }
+
+  .main-content.with-sidebar {
+    padding-left: 0;
+  }
+}
+/*****************************************/
+.btn-cancelar {
+  background-color: #6c757d;
+  color: white;
+}
+.btn-cancelar,
+.btn-guardar {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-cancelar:hover {
+  background-color: #5a6268;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  background: transparent;
+  border: 2px solid #5a6268;
+  color: #333;
+}
